@@ -1,0 +1,328 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Software Build Automation Tools</title>
+
+		<!-- bootstrap -->
+		<link rel="stylesheet" href="ext/bootstrap-5.1.3-dist/css/bootstrap.css">
+		<!-- -->
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/white.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+
+		<!-- remove annoying shadow around images -->
+		<style>
+			.reveal section img {
+				background-color:white;
+				border:0;
+				box-shadow: 0 0 0 0;
+			}
+		</style>
+		<!-- -->
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<!-- p>U<span style="text-transform: lowercase;">sługi i platformy dew dla aplikacji<br /> w Chmurze</span></p -->
+
+					<h3>C<span style="text-transform: lowercase;">ontinous .*</span><br/></h3>
+					<br />
+
+					<h6><small>W<span style="text-transform: lowercase;">ojciech</span> B<span style="text-transform: lowercase;">arczyński</span> <br />
+							<span style="text-transform: lowercase;">wojciech.barczynski@wsb.wroclaw.pl</span></small>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+### C<span style="text-transform: lowercase;">ource materials</span>
+
+<a href="https://github.com/wojciech11/se_software_build_automation_tools/">github.com/wojciech11/se_software_build_automation_tools</a>
+					</script>
+				</section>
+
+
+				<section>
+					<h3>H<span style="text-transform: lowercase;">igh performance teams</span></h3>
+					<div class="container">
+						<div class="row">
+							<div class='col-md-6'>
+								<p>(Tech) metrics:</p>
+								<ul>
+									<li>Lead Time</li>
+									<li>Deployment frequency</li>
+									<li>Mean time to Recovery</li>
+									<li>Change Fail Percent</li>
+								</ul>
+							</div>
+							<div class='col-md-6'>
+								<img width="100%" style="object-fit: fill;" src="img/laptop_book_accelarate.png" />
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<h3>H<span style="text-transform: lowercase;">igh performance teams</span></h3>
+					<div class="container">
+						<div class="row">
+							<div class='col-md-6'>
+								<p>Not only technical:</p>
+								<ul>
+									<li>Trust</li>
+									<li>Psycological safety</li>
+									<li>High cooperation</li>
+									<li>...</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- https://www.amazon.com/Culture-Code-Secrets-Highly-Successful/dp/0525492461 -->
+
+				<section>
+					<h3>H<span style="text-transform: lowercase;">igh performance teams</span></h3>
+					<div class="container">
+						<div class="row">
+							<div class='col-md-6'>
+								<p>Not only technical:</p>
+								<ul>
+									<li>Trust</li>
+									<li>Psycological safety</li>
+									<li>High cooperation</li>
+									<li>...</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<h3>Continuous .*</h3>
+					<img src="img/cd.svg" />
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+### W<span style="text-transform: lowercase;">hy</span>
+
+- This is how we build software in the companies
+
+					</script>
+				</section>
+
+				<section>
+					<h3>C<span style="text-transform: lowercase;">ontinuous</span></h3>
+					<ul>
+						<li>Integration (1)</li>
+						<li>Delivery (1)</li>
+						<li>Deployment (2)</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>Continuous .*</h3>
+					<img src="img/ci_cd_cd.svg" style="width:100%">
+				</section>
+
+				<section>
+					<h3>Continuous .*</h3>
+					<img src="img/od_dev_do_klienta.svg" style="width:80%">
+				</section>
+
+
+				<section>
+					<h3>Goal</h3>
+					<ul>
+						<li>We know where we are with our code</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>P<span style="text-transform: lowercase;">ractices</span></h3>
+					<ul>
+						<li>Automatization</li>
+						<li>Standarization</li>
+						<li>Tooling</li>
+						<li>Software design and architecture</li>
+						<li>Cooperation between teams and people</li>
+					</ul>
+				</section>
+
+
+				<section>
+					<h3>C<span style="text-transform: lowercase;">ontinuous integration</li></h3>
+					<ul>
+						<li>Every change validated</li>
+						<li>We can package the software</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>C<span style="text-transform: lowercase;">ontinuous delivery</li></h3>
+					<ul>
+						<li>Our software ready to be installed</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>C<span style="text-transform: lowercase;">ontinuous Deployment</li></h3>
+					<img src="img/app_delivered.jpg" width="40%"/>
+					<p>Our software is in the hands of our customers</p>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+### T<span style="text-transform: lowercase;">ools</span>
+
+Automation tools:
+
+- Jenkins / GitlabCI
+- Github Actions
+- TravisCI and many more
+					</script>
+				</section>
+
+				<section>
+					<h2>C<span style="text-transform: lowercase;">ontinuous integration</li></h2>
+					<img src="img/assembly_line.gif" />
+				</section>
+
+
+				<section>
+					<h3>C<span style="text-transform: lowercase;">ontinuous integration</li></h3>
+					<img src="img/ci_diagram.svg" style="width:70%">
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+### T<span style="text-transform: lowercase;">ools</span>
+
+Automation tools:
+
+- Jenkins / GitlabCI
+- Github Actions
+- TravisCI and many more
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+## W<span style="text-transform: lowercase;">orking</span> CI/CD <span style="text-transform: lowercase;"> has the highest priority</span>
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+### CI<span style="text-transform: lowercase;"> starts on the dev workstation</li>
+
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+### CI<span style="text-transform: lowercase;"> starts on the dev workstation</li>
+
+- tool common for the tools and people
+- you can run the software locally
+- you can run the test locally
+					</script>
+				</section>
+
+				<!-- <section data-markdown>
+					<script type="text/template">
+### G<span style="text-transform: lowercase;">rading</span>
+
+- Project
+- Test
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+### P<span style="text-transform: lowercase;">roject</span>
+
+Requirements:
+
+- a web simple application or other
+- README.md
+- project entry script, e.g., Makefile
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+### P<span style="text-transform: lowercase;">roject</span>
+
+Requirements:
+
+- On Github or other similar platform
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+### P<span style="text-transform: lowercase;">roject</span>
+
+How to submit
+
+- by Email
+- before the last meeting
+- title: student number and the name of the course
+- Short description and link to your github project 
+
+<p><small>wojciech.barczynski@wsb.wroclaw.pl</small></p>
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+### T<span style="text-transform: lowercase;">est</span>
+
+- 10 questions
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+### E<span style="text-transform: lowercase;">xercises</span>
+
+- Problem
+- Try to solve it yourself - timebox
+- Ask for help
+- Completed? Please share.
+- Without copy&paste (be pragmatic)
+					</script>
+				</section> -->
+
+
+
+
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
