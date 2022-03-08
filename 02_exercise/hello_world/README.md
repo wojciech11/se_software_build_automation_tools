@@ -14,10 +14,22 @@
    pip install -r test_requirements.txt;
    ``` 
 
-3. Check whether the app works:
+3. Check whether the app works, start it, and use `curl` to call the app web api:
 
    ```bash
    PYTHONPATH=. FLASK_APP=hello_world flask run
+   ```
+
+   ```bash
+   curl 127.0.0.1:5000
+   ```
+
+   ```bash
+   curl 127.0.0.1:5000/outputs
+   ```
+
+   ```bash
+   curl '127.0.0.1:5000/?output=json'
    ```
 
 3. What is the code without tests:
