@@ -90,7 +90,7 @@ https://docs.github.com/en/actions/automating-builds-and-tests/building-and-test
   ```
 
   ```bash
-  PYTHONPATH=. py.test --verbose -s --cov=hello_world
+  PYTHONPATH=. py.test --verbose -s --cov=hello_world --cov-report=xml
   ```
 
 2. [black](https://github.com/psf/black) uncompromising code formatter:
