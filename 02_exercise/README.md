@@ -62,9 +62,7 @@ We will show how to build a Continuous Integration pipeline with [Github Actions
    mkdir -p .github/workflows
    ```
 
-2. Let's create the first automation - `.github/workflows/ci.yaml` (after [github docs](
-https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs-or-python?langId=py
-):
+2. Let's create the first automation - `.github/workflows/ci.yaml` (after [github docs](https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs-or-python?langId=py)):
 
    ```yaml
    name: Package Project
