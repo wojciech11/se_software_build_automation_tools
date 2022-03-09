@@ -7,7 +7,7 @@
 2. Add `Makefile` to wrap the dependency installation, run, and test commands with Makefile targets:
 
    ```makefile
-   .PHONY: deps
+   .PHONY: deps test
 
    deps:
    	pip install -r requirements.txt; \
@@ -20,7 +20,7 @@
 
 4. Create a git repository for the hello_world application in your github account, e.g., python_simplec_ci.
 
-5. Add a `.gitignore`:
+5. Please do not foget about adding a `.gitignore`, you could start with:
 
    ```
    # Byte-compiled / optimized
@@ -33,6 +33,18 @@
    ```
 
 6. Push all the code to the github repository.
+
+7. You github repository should look like that:
+
+   ```
+   |- hello_world/
+   |- test/
+   |- main.py
+   |- Makefile
+   |- README.md
+   |- requirements.txt
+   \- test_requirements.txt
+   ```
 
 ### Continuous Integration with Github Actions
 
@@ -65,7 +77,7 @@ https://docs.github.com/en/actions/automating-builds-and-tests/building-and-test
        runs-on: ubuntu-latest
    
        steps:
-         # get the code under $GITHUB_WORKSPACE    directoru
+         # get the code under $GITHUB_WORKSPACE directory
          - uses: actions/checkout@v2
          # get the python
          - name: Set up Python 3
@@ -84,14 +96,14 @@ https://docs.github.com/en/actions/automating-builds-and-tests/building-and-test
 
 1. Test coverage:
 
-  ```bash
-  echo 'pytest-cov' >> test_requirements.txt
-  pip install -r test_requirements.txt
-  ```
+   ```bash
+   echo 'pytest-cov' >> test_requirements.txt
+   pip install -r test_requirements.txt
+   ```
 
-  ```bash
-  PYTHONPATH=. py.test --verbose -s --cov=hello_world --cov-report=xml
-  ```
+   ```bash
+   PYTHONPATH=. py.test --verbose -s --cov=hello_world --cov-report=xml
+   ```
 
 2. [black](https://github.com/psf/black) uncompromising code formatter:
 
