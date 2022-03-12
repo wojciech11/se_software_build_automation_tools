@@ -491,7 +491,6 @@ find ~ -iname poland -type d
 2. Przeglądasz logi i znajdujesz zrzut z obiektu reprezentującego produkt do pliku `koszyk2.txt`:
 
    ```
-
    product=mleko
    price=1
    product=chleb
@@ -501,7 +500,6 @@ find ~ -iname poland -type d
    Korzystając z pomocy `cut` oraz `paste`, utwórz plik `koszyk2b.txt` z danymi w następującym formacie:
 
    ```
-
    mleko 1
    chleb 4
    ```
