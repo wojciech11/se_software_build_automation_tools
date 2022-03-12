@@ -516,7 +516,7 @@ find ~ -iname poland -type d
    product_category: mleczne
    ```
 
-   Our task is to replace `mleczne` (Polish word for the diary products) with the category ID `M0`:
+   Zauważasz, że mamy tutaj użytą nazwę kategorii produktu zamiast jego kodu. Twoim zadaniem jest zastopienie `mleczne` identyfikatorem kategorii `M0`:
 
    ```
    product_category: M0
