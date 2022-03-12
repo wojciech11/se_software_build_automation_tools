@@ -453,7 +453,7 @@ find . -iname '*.txt' -type f
 find ~ -iname poland -type d
 ```
 
-### Praca z plikacmi
+### Praca z plikami tekstowymi
 
 1. You got an export from your ecommerce shop `koszyk1.txt`:
 
