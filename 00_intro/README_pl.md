@@ -484,7 +484,7 @@ find ~ -iname poland -type d
 
    Wykorzystując nabytą wiedzę:
 
-   1. Wyświetl nazwy użytkowników z `/etc/passwd`
+   1. Wyświetl nazwy użytkowników z `/etc/passwd` (pierwsza kolumna)
    2. Wyciągniej miesiąc i dzień `/var/log/syslog`
    3. Wyciągniej miesiąc i dzień oraz godzinę (bez minut) `/var/log/syslog`
 
