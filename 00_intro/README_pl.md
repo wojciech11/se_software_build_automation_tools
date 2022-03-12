@@ -528,19 +528,19 @@ find ~ -iname poland -type d
    sed 's/category/cat/g'
    ```
 
-4. `tr` is very useful when you need to replace a single character:
+4. `tr` jest bardzo pomocne kiedy musimy zamienić pojedyńczą literę:
 
    ```bash
    cat koszyk3.txt | tr ':' '='
    ```
    
-   or remove it:
+   albo usunąć:
 
    ```bash
    cat koszyk3.txt | tr -d ':'
    ```
 
-5. Please find out what `head`, `tail`, and `less` do:
+5. Sprawdź co robią komendy `head`, `tail` oraz `less`:
 
    ```bash
    less /var/log/syslog
@@ -581,15 +581,8 @@ find ~ -iname poland -type d
 
    Notice how easy is to find a solution for a common problem in bash.
 
-## Homework
-
-Install one from these two:
-
-- [ohmybash](https://ohmybash.nntoan.com/) / [bash-it](https://github.com/Bash-it/bash-it) if you are on Linux
-- [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh) if you are on Macos ([a blog post for MacOS](https://towardsdatascience.com/the-ultimate-guide-to-your-terminal-makeover-e11f9b87ac99?gi=5b5538f07a5d#367b)) or you are on Linux ([blog post](https://vitux.com/ubuntu-zsh-shell/))
-
-There are many plugins that gives you super powers in your terminal, you can check the top plugins on [this page](https://safjan.com/top-popular-zsh-plugins-on-github-2021/).
-
 ## Dodatkowe
 
 - [Better Bash Scripting in 15 Minutes ](http://robertmuth.blogspot.com/2012/08/better-bash-scripting-in-15-minutes.html)
+- [bash-it](https://github.com/Bash-it/bash-it) lub [ohmybash](https://ohmybash.nntoan.com/)
+- [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh) 
