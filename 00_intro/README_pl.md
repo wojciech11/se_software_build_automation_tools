@@ -488,7 +488,7 @@ find ~ -iname poland -type d
    2. Wyciągniej miesiąc i dzień `/var/log/syslog`
    3. Wyciągniej miesiąc i dzień oraz godzinę (bez minut) `/var/log/syslog`
 
-2. Przeglądasz logi i znajdujesz zrzut z obiektu reprezentującego produkt do pliku koszyk2.txt:
+2. Przeglądasz logi i znajdujesz zrzut z obiektu reprezentującego produkt do pliku `koszyk2.txt`:
 
    ```
 
@@ -506,13 +506,13 @@ find ~ -iname poland -type d
    chleb 4
    ```
 
-   Hint:
+   Wskazówka:
 
    ```bash
    cat koszyk2.txt | paste - -
    ```
 
-3. Let's learn how to replace strings, assuming we have `koszyk3.txt` with the following content:
+3. Zastępowanie łańcuchów znaków, masz plik `koszyk3.txt` z treścią:
 
    ```
    product_category: mleczne
