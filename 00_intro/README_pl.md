@@ -552,13 +552,13 @@ find ~ -iname poland -type d
 6. Given the following basket export structure (notice `*.txt` are files):
 
    ```
-   basket
-   |- chocolates
+   basket/
+   |- chocolates/
    |   \- products.txt
    |      wedel,2
    |      goplana,3
    |
-   |- dairy
+   \- dairy/
        \- products.txt
           mlekovita,5
           zimnemleko,4
