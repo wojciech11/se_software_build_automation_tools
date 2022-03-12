@@ -524,7 +524,7 @@ find ~ -iname poland -type d
    product_category: M0
    ```
 
-   Hint:
+   Wskazówka:
 
    ```bash
    sed 's/category/cat/g'
