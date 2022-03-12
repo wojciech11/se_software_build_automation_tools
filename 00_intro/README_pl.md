@@ -442,10 +442,10 @@ Jeśli szukasz wersję w języku angielsku - [README.md](./README.md).
 
 ```bash
 cd
-find . -iname *.txt
+find . -iname '*.txt'
 
 # ensure we get the file:
-find . -iname *.txt -type f
+find . -iname '*.txt' -type f
 
 # find in the home directory `~`
 # a directory `-type d`
@@ -453,35 +453,42 @@ find . -iname *.txt -type f
 find ~ -iname poland -type d
 ```
 
-### Working with text files
+### Praca z plikacmi
 
 1. You got an export from your ecommerce shop `koszyk1.txt`:
 
    ```
-   milk,10,1zl
-   bread,1,4zl
+   mleko,10,1zl
+   chleb,1,4zl
    ```
 
-   Using `cut`:
+   Używając `cut`:
 
    ```bash
    cut -d',' -f1 koszyk1.txt
    cat koszyk1.txt | cut -d',' -f1
+
+   # zauważ:
+   cut --delimiter=',' --fiels=1 koszyk.txt
+
+   # oraz
+   cut -d',' -f3,1 koszyk1.txt
    ```
 
-   extract:
+   wypisz na ekran:
 
    ```
    1zl
    4zl
    ```
 
-   Bonus task:
+   Wykorzystując nabytą wiedzę:
 
-   1. Print the user names from `/etc/passwd`
-   2. Extract month and days from `/var/log/syslog`
+   1. Wyświetl nazwy użytkowników z `/etc/passwd`
+   2. Wyciągniej miesiąc i dzień `/var/log/syslog`
+   3. Wyciągniej miesiąc i dzień oraz godzinę (bez minut) `/var/log/syslog`
 
-2. Another day, another weird export from an online shop `koszyk2.txt`:
+2. Przeglądasz logi i znajdujesz zrzut z obiektu reprezentującego produkt do pliku koszyk2.txt:
 
    ```
 
