@@ -498,7 +498,7 @@ find ~ -iname poland -type d
    price=4
    ```
 
-   With help of `cut` and `paste`, print on the screen:
+   Korzystając z pomocy `cut` oraz `paste`, utwórz plik `koszyk2b.txt` z danymi w następującym formacie:
 
    ```
 
