@@ -281,7 +281,7 @@ Jeśli szukasz wersję w języku angielsku - [README.md](./README.md).
 
    # let's move the file back
    # to the current directory `.`
-   $ mv mydirectory/myfile2 .
+   mv mydirectory/myfile2.txt .
    ```
 
 8. `mv` służy również do zmiany nazwy foderów oraz plików, wróćmy do naszych katalogów o Polsce i zmienmy nazwę naszego katalogu `cities` na `miasta`:
