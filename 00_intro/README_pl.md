@@ -375,13 +375,13 @@ Jeśli szukasz wersję w języku angielsku - [README.md](./README.md).
 
    ```bash
    # porownaj:
-   $ echo "$HOME"
-   $ echo '$HOME'
+   echo "$HOME"
+   echo '$HOME'
 
    # zawsze w skryptach
    # zmienne srodowiskowe umieszczaj 
    # miedzy { i }
-   $ echo "${HOME}"
+   echo "${HOME}"
    ```
 
 4. Zmienne środowiskowe i `echo`:
