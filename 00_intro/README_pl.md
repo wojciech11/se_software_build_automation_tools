@@ -540,6 +540,12 @@ find ~ -iname poland -type d
    cat koszyk3.txt | tr -d ':'
    ```
 
+   Na przykład, jeśli użyjemy jeszcze `xargs` to możemy wygenerować URLe do sklepu:
+
+   ```bash
+   echo "product_cat=M0" | xargs -I {} echo "https://example.com/search?{}"
+   ```
+
 5. Sprawdź co robią komendy `head`, `tail` oraz `less`:
 
    ```bash
