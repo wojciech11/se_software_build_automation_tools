@@ -1,5 +1,7 @@
 # Linux basics
 
+If you are looking for the manual in Polish, you will find it [here](README_pl.md).
+
 ## Survival
 
 1. From GUI to Terminal:

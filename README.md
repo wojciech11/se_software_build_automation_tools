@@ -23,9 +23,11 @@
    - linters
    - [Python virtual environment](https://docs.python.org/3/tutorial/venv.html)
 
-3. Github workflows
+3. Github workflows <!-- [9/15]-->
 
-4. Tools & Docker
+4. Tools & Docker <!-- [12/15] -->
+
+5. Summary & Egzam  <!-- [15/15] -->
 
 ## Useful commands
 

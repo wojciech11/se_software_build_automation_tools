@@ -438,13 +438,18 @@ Jeśli szukasz wersję w języku angielsku - [README.md](./README.md).
    bash my_script.sh
    ```
 
-## Where can I find X?
+## Jak znaleźć plik lub katalog po nazwie?
+
+Pamiętam, że gdzieś utworzyłem plik lub katalog ale nie wiem gdzie dokładnie.
 
 ```bash
+# znajdzmy wszystkie pliki lub katalogi
+# zakonczone na txt
 cd
 find . -iname '*.txt'
 
-# ensure we get the file:
+# a jednak interesują m
+# mnie tylko pliki
 find . -iname '*.txt' -type f
 
 # find in the home directory `~`
@@ -555,7 +560,7 @@ find ~ -iname poland -type d
    head -n 10 /var/log/syslog
    ```
 
-6. Given the following basket export structure (notice `*.txt` are files):
+6. Mamy następujący eksport z naszego sklepu (zauważ `*.txt` są plikami):
 
    ```
    basket/
@@ -570,7 +575,7 @@ find ~ -iname poland -type d
           zimnemleko,4
    ```
 
-   1. With one command print the price for each of the item:
+   1. Za pomocą jednej komendy wypisz ceny każdego z produktów:
 
       ```
       2
@@ -579,13 +584,13 @@ find ~ -iname poland -type d
       4
       ```
 
-   2. With one command (find it with help of Google on stackoverflow), calculate the basket value:
+   2. Teraz zsumuj, żebyśmy mieli wartość całego koszyka (poszukaj rozwiązania na stackoverflow/google):
 
       ```
       14
       ```
 
-   Notice how easy is to find a solution for a common problem in bash.
+   Zauważ, jak łatwo można znaleźć rozwiązanie dla nawet złożonych problemów w bashu.
 
 ## Dodatkowe
 
