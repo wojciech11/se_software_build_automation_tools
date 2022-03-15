@@ -4,7 +4,15 @@
 
 1. Follow the project's README.md [hello_world](./hello_world) to run locally and test the tests.
 
-2. Add `Makefile` to wrap the dependency installation, run, and test commands with Makefile targets. Start with: 
+2. Create a file with name `Makefile`, an input file for `make`:
+
+   ```bash
+   touch Makefile
+   ```
+
+   `make` is the most commonly used tool for automating common tasks for your project.
+
+3. We should now wrap commands that we execute often working with our project - installing dependencies, running the app locally, linting and testing. Start with: 
 
    ```makefile
    .PHONY: deps test
