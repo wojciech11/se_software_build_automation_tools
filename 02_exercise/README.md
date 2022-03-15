@@ -4,7 +4,7 @@
 
 1. Follow the project's README.md [hello_world](./hello_world) to run locally and test the tests.
 
-2. Add `Makefile` to wrap the dependency installation, run, and test commands with Makefile targets:
+2. Add `Makefile` to wrap the dependency installation, run, and test commands with Makefile targets. Start with: 
 
    ```makefile
    .PHONY: deps test
@@ -14,11 +14,24 @@
    		pip install -r test_requirements.txt
    ```
 
-   Notice: we use tabs in `Makefile`.
+   Notice: we use tabs in `Makefile`. What does `.PHONE`?
+
+   You should add:
+
+   ```makefile
+   test:
+    # here put the command for testing from README.md
+
+   run:
+    # command to run the app locally
+
+   lint:
+    # command to execute flake8 from README.md
+   ```
 
 3. Test each of the `Makefile` targets.
 
-4. Create a git repository for the hello_world application in your github account, e.g., python_simplec_ci.
+4. Create a git repository for the hello_world application in your github account, e.g., python_simple_ci.
 
 5. Please do not foget about adding a `.gitignore`, you could start with:
 
