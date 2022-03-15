@@ -37,11 +37,11 @@
     # command to execute flake8 from README.md
    ```
 
-3. Test each of the `Makefile` targets.
+4. Test each of the `Makefile` targets.
 
-4. Create a git repository for the hello_world application in your github account, e.g., python_simple_ci.
+5. Create a git repository for the hello_world application in your github account, e.g., python_simple_ci.
 
-5. Please do not foget about adding a `.gitignore`, you could start with:
+6. Please do not foget about adding a `.gitignore`, you could start with:
 
    ```
    # Byte-compiled / optimized
@@ -53,9 +53,9 @@
    venv/
    ```
 
-6. Push all the code to the github repository.
+7. Push all the code to the github repository.
 
-7. You github repository should look like that:
+8. You github repository should look like that:
 
    ```
    |- hello_world/
