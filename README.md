@@ -9,21 +9,25 @@
 
 ## Program
 
-1. Basics: [manual intro](00_intro/README.md) and [manual git](01_exercise/manual.md) / [slides](01_slides/index.pdf)
+1. Basics: [manual intro](00_intro/README.md) and [manual git](01_exercise/manual.md) / [slides](01_slides/index.pdf):
 
    - linux basics
    - bash
    - Git
    - [Makefile](01_exercise/example/)
 
-2. What is CI/CD? - [manual](02_exercise/README.md) / [slides](02_slides/index.pdf)
+2. What is CI/CD? - [manual](02_exercise/README.md) / [slides](02_slides/index.pdf):
 
    - Makefile
    - tests
    - linters
    - [Python virtual environment](https://docs.python.org/3/tutorial/venv.html)
 
-3. Docker and packaging <!-- [9/15]-->
+3. Docker and packaging - [manual](03_exercise/README.md):
+
+   - Dependency hell
+   - Packages
+   - Docker
 
 4. Other tools <!-- [12/15] -->
 
