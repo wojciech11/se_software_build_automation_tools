@@ -2,6 +2,8 @@
 
 ### Preparation
 
+The software building automation starts at the developer workstation.
+
 1. Follow the project's README.md [hello_world](./hello_world) to run locally and test the tests.
 
 2. Create a file with name `Makefile`, an input file for `make`:
