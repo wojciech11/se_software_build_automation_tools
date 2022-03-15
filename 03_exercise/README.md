@@ -1,8 +1,8 @@
-## Packaging (Docker)
+# Packages (Docker)
 
-We will work today in the repository, you created last time:
+We will work today your Github repository. The repository with Python code, you have created last time:
 
-```
+```text
 |- .github/workflows
 |- hello_world/
 |- test/
@@ -13,7 +13,7 @@ We will work today in the repository, you created last time:
 \- test_requirements.txt
 ```
 
-### Preparation
+## Preparation
 
 1. Check whether the application works locally following the steps from the project README.md.
 
@@ -25,9 +25,9 @@ We will work today in the repository, you created last time:
 
 2. Please verify your github flow works.
 
-### Packaging
+## Packaging
 
-1. What is a dependency hell?
+1. What is the dependency hell?
 
 2. What are different approaches to address it?
 
@@ -127,26 +127,26 @@ We will work today in the repository, you created last time:
 
 10. How to restart a Docker:
 
-   ```bash
-   sudo docker stop hello-world-printer-dev 
-   sudo docker rm hello-world-printer-dev
-   sudo make docker_run
-   ```
+    ```bash
+    sudo docker stop hello-world-printer-dev 
+    sudo docker rm hello-world-printer-dev
+    sudo make docker_run
+    ```
 
-11. The bext step is to build your package (in our scenario Docker) as a part of CI/CD (see [docs](https://github.com/marketplace/actions/build-and-push-docker-images)). Please add at the end of your workflow file:
+11. The next step is to build your package (in our scenario a Docker Image) as a part of your CI/CD process (see [docs](https://github.com/marketplace/actions/build-and-push-docker-images)). Please add at the end of your workflow file:
 
-   ```yaml
-     # ...
-      - name: Set up QEMU
-        uses: docker/setup-qemu-action@v1
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v1
-      - name: Build and export to Docker
-        uses: docker/build-push-action@v2
-        with:
-          context: .
-          load: true
-   ```
+    ```yaml
+      # ...
+       - name: Set up QEMU
+         uses: docker/setup-qemu-action@v1
+       - name: Set up Docker Buildx
+         uses: docker/setup-buildx-action@v1
+       - name: Build and export to Docker
+         uses: docker/build-push-action@v2
+         with:
+           context: .
+           load: true
+    ```
 
 12. We should also publish our Docker Image to a repository. `hub.docker.com` is the most popular one:
 
@@ -157,16 +157,9 @@ We will work today in the repository, you created last time:
 13. Package and software versioning, read http://semver.org/ 
 
 1. Zapoznaj się z opisem i napisz w swoich słowach co to jest Semantic Versioning:
-
-
-
 Dlaczego MAY i MUST są z dużej litery?
 
-
-
 Co to jest RFC 2119?
-
-
 
 Opisz każde z pól następującej wersji:
 1.0.1
@@ -176,9 +169,9 @@ Opisz każde z pól następującej wersji:
 2. Co to jest Calver (https://calver.org/)?
 -->
 
-### Advenced topics 
+## Advanced topics
 
-- Run your docker and mount the source code from your workstation to the Docker, so you can faster iterate. You do not need to rebuild your image just restart the docker:
+- Run your Docker and mount the source code from your workstation to the Docker, so you can faster iterate. No need to rebuild your image, you can just restart the Docker:
 
   ```bash
   sudo docker run \
@@ -188,7 +181,7 @@ Opisz każde z pól następującej wersji:
        -d hello-world-printer
   ```
 
-- Does my Dockerfile follow [best practises](https://github.com/wojciech12/workshop_kubernetes_and_cloudnative/tree/master/00_docker)? We have a linter for that:
+- Does my Dockerfile follow [best practices](https://github.com/wojciech12/workshop_kubernetes_and_cloudnative/tree/master/00_docker)? We have a linter for that:
 
   ```bash
   find . -iname Dockerfile | xargs -I {} bash -c "echo {}; docker run --rm -i hadolint/hadolint < {}"
@@ -200,3 +193,31 @@ Opisz każde z pól następującej wersji:
   ```bash
   trivy image hello-world-printer
   ```
+
+### Ideas for Python Practise
+
+1. Add XML output for your hello printer app.
+
+2. Let the client, provide her or his name as a GET argument:
+
+   ```bash
+   curl '127.0.0.1:5000?name=apolonia&output=json'
+   ```
+
+   add relevant tests.
+
+3. Generate JSON output with the built-in json library (do not forget about the tests):
+
+   ```python
+   import json
+   ```
+
+4. Generate XML output with lxml (do not forget about the tests):
+
+   ```bash
+   pip3 install lxml
+   ```
+
+   Hint: see this post on [stackoverflow](https://stackoverflow.com/a/4470035).
+
+5. Execute the flask app with [gunicorn](https://gunicorn.org/).

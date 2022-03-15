@@ -29,7 +29,7 @@
    - Packages
    - Docker
 
-4. Other tools <!-- [12/15] -->
+4. Time for your project + Other tools <!-- [12/15] -->
 
 5. Summary & Exam  <!-- [15/15] -->
 
