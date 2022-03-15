@@ -15,7 +15,7 @@ We will work today your Github repository. The repository with Python code, you 
 
 ## Preparation
 
-1. Check whether the application works locally following the steps from the project README.md.
+1. Check whether the application works locally following the steps from the project `README.md`.
 
    ```bash
    make test
@@ -32,7 +32,7 @@ We will work today your Github repository. The repository with Python code, you 
 2. What are different approaches to address it?
 
    - How does Python or NodeJS solve it?
-   - Linux distributions, e.g., dep or rpm? What is `snap` and what the difference is?
+   - Linux distributions, e.g., deb or rpm? What is `snap` and what the difference is?
    - How did we address it on the cloud?
    - What did Docker bring to the table?
 
@@ -77,7 +77,7 @@ We will work today your Github repository. The repository with Python code, you 
 
    and test it. 
 
-6. Docker provides us commands to run the application with one comamnad:
+6. Docker provides us commands to run the application with one command:
 
    ```bash
    sudo docker run \
@@ -184,8 +184,10 @@ Opisz każde z pól następującej wersji:
 - Does my Dockerfile follow [best practices](https://github.com/wojciech12/workshop_kubernetes_and_cloudnative/tree/master/00_docker)? We have a linter for that:
 
   ```bash
-  find . -iname Dockerfile | xargs -I {} bash -c "echo {}; docker run --rm -i hadolint/hadolint < {}"
   docker run --rm -i hadolint/hadolint < Dockerfile
+
+  # search & lint!
+  find . -iname Dockerfile | xargs -I {} bash -c "echo {}; docker run --rm -i hadolint/hadolint < {}"
   ```
 
 - Security? Does the Docker image contain outdated packages? I recommend [trivy](https://hub.docker.com/r/aquasec/trivy).
@@ -194,7 +196,7 @@ Opisz każde z pól następującej wersji:
   trivy image hello-world-printer
   ```
 
-### Ideas for Python Practise
+### Ideas for Python Practice
 
 1. Add XML output for your hello printer app.
 
