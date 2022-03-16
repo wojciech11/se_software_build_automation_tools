@@ -71,13 +71,13 @@ The software building automation starts at the developer workstation.
 
 ### Continuous Integration with Github Actions
 
-We will show how to build a Continuous Integration pipeline with [Github Actions](https://docs.github.com/en/actions). Basic concepts after [docs](https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions)
+We will show how to build a Continuous Integration pipeline with [Github Actions](https://docs.github.com/en/actions). Basic concepts after [docs](https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions):
 
 - Event - trigger workflows
 - Workflow - `.github/workflows`
-- Job
+- Jobs
 - Steps
-- Action - reusable complex task
+- Actions - reusable complex task
 
 1. Create in the root of your project a directory -  `.github/workflows`:
 
