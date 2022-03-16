@@ -23,6 +23,10 @@ We will work today your Github repository. The repository with Python code, you 
    make run
    ```
 
+   ```bash
+   curl 127.0.0.1:5000/
+   ```
+
 2. Please verify your github flow works.
 
 ## Packaging
