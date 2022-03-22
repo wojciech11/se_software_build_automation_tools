@@ -1,5 +1,9 @@
 # Your project and versioning
 
+## Project
+
+Following the example from the previous exercises, please create new one with a CI/CD process implemented with github actions. You can also choose a different tool, for example, gitlab, TravisCI, or bitbucket.
+
 ## Software versioning
 
 1. Read http://semver.org/ amd describe in your words what semver proposes.
