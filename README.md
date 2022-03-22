@@ -29,7 +29,9 @@
    - Packages
    - Docker
 
-4. Time for your project + Other tools <!-- [12/15] -->
+4. Time for your project and versioning conventions - [manual](03_exercise/README.md):
+
+   - versioning conventions
 
 5. Summary & Exam  <!-- [15/15] -->
 
