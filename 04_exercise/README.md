@@ -2,7 +2,14 @@
 
 ## Project
 
-Following the example from the previous exercises, please create new one with a CI/CD process implemented with github actions. You can also choose a different tool, for example, gitlab, TravisCI, or bitbucket.
+Following the example from the previous exercises, please create your own program and implement a CI/CD process for it with github actions. You can also choose a different tool, for example, gitlab, TravisCI, or bitbucket.
+
+Please ensure that you covered:
+
+1. Basics: .gitignore, README.md, Makefile,
+2. Your Makefile has basic commands implemented,
+3. Your README.md describes how to run and test your program,
+4. Github pipeline that lint, test, and build a package on every commit.
 
 ## Software versioning
 
