@@ -9,7 +9,9 @@ Please ensure that you covered:
 1. Basics: .gitignore, README.md, Makefile,
 2. Your Makefile has basic commands implemented,
 3. Your README.md describes how to run and test your program,
-4. Github pipeline that lint, test, and build a package on every commit.
+4. Github pipeline that lint, test, and build a package on every commit,
+5. It can be any programming language.
+
 
 ## Software versioning
 
