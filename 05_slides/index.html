@@ -1,0 +1,196 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Software Build Automation Tools</title>
+
+		<!-- bootstrap -->
+		<link rel="stylesheet" href="ext/bootstrap-5.1.3-dist/css/bootstrap.css">
+		<!-- -->
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/white.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+
+		<!-- remove annoying shadow around images -->
+		<style>
+			.reveal section img {
+				background-color:white;
+				border:0;
+				box-shadow: 0 0 0 0;
+			}
+		</style>
+		<!-- -->
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<!-- p>U<span style="text-transform: lowercase;">sługi i platformy dew dla aplikacji<br /> w Chmurze</span></p -->
+
+					<h3>C<span style="text-transform: lowercase;">ontinous Deployment &amp; Cloud</span><br/></h3>
+					<br />
+
+					<h6><small>W<span style="text-transform: lowercase;">ojciech</span> B<span style="text-transform: lowercase;">arczyński</span> <br />
+							<span style="text-transform: lowercase;">wojciech.barczynski@wsb.wroclaw.pl</span></small>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+### C<span style="text-transform: lowercase;">ourse materials</span>
+
+<a href="https://github.com/wojciech11/se_software_build_automation_tools/">github.com/wojciech11/se_software_build_automation_tools</a>
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+## C<span style="text-transform: lowercase;">loud platforms</span>
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+### C<span style="text-transform: lowercase;">attle vs pets</span>
+
+<img src="img/observability/rubber_duck_microservices.jpg" width="70%" />
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+### C<span style="text-transform: lowercase;">attle vs pets</span>
+
+- MTTR vs MTTF
+
+<p><small><a href="https://www.atlassian.com/incident-management/kpis/common-metrics">Common metrics</a></small></p>
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+### C<span style="text-transform: lowercase;">loud services</span>
+
+Basic:
+
+- On-Premise
+- IaaS
+- PaaS
+- SaaS
+					</script>
+				</section>
+
+				<section>
+					<h3>O<span style="text-transform: lowercase;">n-</span>P<span style="text-transform: lowercase;">remise</span></h3>
+					<img src="img/cloud/managed_stack_on_premise.svg" />
+				</section>
+
+				<section>
+					<h3>I<span style="text-transform: lowercase;">aa</span>S</h3>
+					<img src="img/cloud/managed_stack_iaas.svg" />
+				</section>
+
+				<section>
+					<h3>P<span style="text-transform: lowercase;">aa</span>S</h3>
+					<img src="img/cloud/managed_stack_paas.svg" />
+				</section>
+
+				<section>
+					<h3>S<span style="text-transform: lowercase;">aa</span>S</h3>
+					<img src="img/cloud/managed_stack.svg" />
+				</section>
+
+				<section>
+					<h3>S<span style="text-transform: lowercase;">aa</span>S</h3>
+					<img src="img/cloud/managed_stack.svg" />
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+### C<span style="text-transform: lowercase;">loud services</span>
+
+Modern:
+
+- CaaS - Container-as-a-Service
+- FaaS - Function-as-a-Service
+- BaaS - Backend-as-a-Service
+- DbaaS - Database-as-a-Service
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+### C<span style="text-transform: lowercase;">loud services</span>
+
+All major cloud players are XaaS.
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+### C<span style="text-transform: lowercase;">loud services</span>
+
+CaaS:
+
+- Kubernetes
+- Redhat Openshift / Suse
+- AWS AKS, GCP GKE
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+### C<span style="text-transform: lowercase;">loud services</span>
+
+FaaS:
+
+- AWS Lambda
+- [Serverless framework](https://www.serverless.com)
+- [KNative](https://knative.dev/docs/)
+					</script>
+				</section>
+
+				<section>
+					<h3>S<span style="text-transform: lowercase;">aa</span>S</h3>
+					<img src="img/cloud/piramida_onp_saas.svg" />
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+# C<span style="text-transform: lowercase;">ontinous</span> D<span style="text-transform: lowercase;">eployment</span>
+
+<p><small>Whiteboard</small></p>
+					</script>
+				</section>
+
+				<section>
+					<h3>T<span style="text-transform: lowercase;">hank</span> y<span style="text-transform: lowercase;">ou</span></h3>
+					<p>Questions?</p>
+				</section>
+
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>

@@ -29,11 +29,16 @@
    - Packages
    - Docker
 
-4. Time for your project and versioning conventions - [manual](03_exercise/README.md):
+4. Time for your project and versioning conventions - [manual](04_exercise/README.md):
 
    - versioning conventions
 
-5. Summary & Exam  <!-- [15/15] -->
+5. Continuous Deployment - [manual](05_exercise/README.md) / [slides](05_slides/index.pdf):
+
+   - Heroku as an example of PaaS
+   - Continuous Deployment with Github actions
+
+6. Summary & Exam  <!-- [15/15] -->
 
 ## Useful commands
 
