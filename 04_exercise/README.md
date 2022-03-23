@@ -11,11 +11,13 @@ Please ensure that you covered:
 3. Your README.md describes how to run and test your program,
 4. Github pipeline that lint, test, and build a package on every commit,
 5. It can be any programming language.
+6. I should see many commits describing the changes.
 
+Deadline: our last meeting.
 
 ## Software versioning
 
-1. Read http://semver.org/ amd describe in your words what semver proposes.
+1. Read [semver](http://semver.org/) and describe in your words what semver proposes.
 
 2. Why are `MAY` and `MUST` capitalized?
 
