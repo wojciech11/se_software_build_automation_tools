@@ -10,8 +10,9 @@ Please ensure that you covered:
 2. Your Makefile has basic commands implemented,
 3. Your README.md describes how to run and test your program,
 4. Github pipeline that lint, test, and build a package on every commit,
-5. It can be any programming language.
-6. I should see many commits describing the changes, pushed with the git CLI.
+5. It can be any programming language,
+6. It should be more than simple application,
+7. I should see many commits describing the changes, pushed with the git CLI.
 
 Deadline: our last meeting.
 
