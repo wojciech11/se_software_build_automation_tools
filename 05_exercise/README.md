@@ -125,4 +125,5 @@ https://docs.github.com/en/actions/monitoring-and-troubleshooting-workflows/addi
 - [fswatch](https://github.com/emcrisostomo/fswatch)
 - [mutagen](https://github.com/mutagen-io/mutagen) - sync with a remote machine
 - [vagrant](https://www.vagrantup.com/) - automatize a VM creation
+- [packer](https://www.packer.io/)
 - https://www.netlify.com/ - popular alternative to Heroku
