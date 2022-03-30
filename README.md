@@ -5,7 +5,7 @@
 - [Ubuntu](https://wiki.ubuntu.com/Releases) (or other linux) or MacOS
 - Your favorite editor: vim/neovim, [vscode](https://code.visualstudio.com/), [atom](https://atom.io/), or [sublime](https://www.sublimetext.com/), or other (e.g., [Kakoune](https://www.redhat.com/sysadmin/kakoune-vi-text-editor))
 - Your favorite IDE: PyCharm Community or [vscode](https://code.visualstudio.com/)
-- (later) docker installed
+- (later) Docker installed
 
 ## Program
 
@@ -72,6 +72,19 @@
   - Pycharm - see the [installation guide](https://www.jetbrains.com/help/pycharm/installation-guide.html#toolbox))
   - vscode - `sudo snap install code --classic`
 
+- Python virtual environment:
+
+  ```bash
+  # create a venv in the .venv directory
+  python3 -m venv .venv
+
+  # activate
+  source .venv/bib/activate
+
+  # deactivate
+  deactivate
+  ```
+
 - Docker (after [how to install Docker on ubuntu](https://docs.docker.com/engine/install/ubuntu/#installation-methods)):
 
    ```bash
@@ -92,5 +105,3 @@
 ## Optional materials
 
 - https://missing.csail.mit.edu/
-
-
