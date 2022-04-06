@@ -270,7 +270,7 @@ See also [comparing workflows](https://www.atlassian.com/git/tutorials/comparing
 - Oferujące więcej funkcjonalności: [sourcetree](https://www.sourcetreeapp.com/) lub [kraken](https://support.gitkraken.com/how-to-install/);
 - tekstowe: [tig](https://jonas.github.io/tig/).
 
-## Zaawansowane
+## Zaawansowane - właściwe opisy zmian
 
 - Git commit messages: [semantic](https://gist.github.com/joshbuchea/6f47e86d2510bce28f8e7f42ae84c716)/vs [conventional](https://www.conventionalcommits.org/en/v1.0.0/), imperative ([cbea.ms/git-commit](https://cbea.ms/git-commit/))
 - Podejście zyskujące na popularności: [gitmoji-cli](https://github.com/carloscuesta/gitmoji-cli)
