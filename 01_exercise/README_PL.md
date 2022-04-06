@@ -49,7 +49,6 @@ Możesz używać gita do zachowywania aplikacji i skryptów rozwijanych w czasie
 
    ```bash
    # sprawdź, czy jesteś we właściwej ścieżce 
-
    pwd
 
    # powinienies zobaczyc
@@ -67,9 +66,19 @@ Możesz używać gita do zachowywania aplikacji i skryptów rozwijanych w czasie
    cat .git/config
    ```
 
-6. Create the first version of your `README.md`, please follow [the guide](https://guides.github.com/features/mastering-markdown/) to add sections, images, and lists. 
+6. Podążając za wskazówkami wykładowcy, utwórz `README.md` za pomocą atom (packages -> Markdown Preview -> Toggle).
 
-7. What is the role of `README.md`? Why is it important?
+   ```bash
+   touch README.md
+
+   # otwórz edytor atom w katalogu glownym
+   # repozytorium
+   atom .
+   ```
+
+   Dodaj kilka sekcji, obrazów, listy... pobaw się formatem Markdown podążając za wskazówkami z [dokumentacji](https://guides.github.com/features/mastering-markdown/). 
+
+7. Jak jest rola pliku `README.md`? Dlaczego plik README jest tak istotny?
 
 8. Let's learn how to use Git. We will practice the git mantra modifing README.md and saving every version of the file git. Please do 3 iterations:
 
