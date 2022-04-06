@@ -9,7 +9,7 @@
 
 ## Program
 
-1. Basics: [manual intro](00_intro/README.md)([pl](00_intro/README_pl.md)) and [manual git](01_exercise/manual.md) / [slides](01_slides/index.pdf):
+1. Basics: [manual intro](00_intro/README.md)([pl](00_intro/README_pl.md)) and [manual git](01_exercise/manual.md) ([pl](01_exercise/README_pl.md)) / [slides](01_slides/index.pdf):
 
    - linux basics
    - bash
