@@ -155,7 +155,7 @@ Możesz używać gita do zachowywania aplikacji i skryptów rozwijanych w czasie
 
     Proszę wykonaj wszystkie kroki przynajmniej 3 razy.
 
-12. Too tired to copy&paste your token? You should enable the `credential.helper`:
+12. Boże! Ile razy mam podawać hasło (token). Jest na to rozwiazanie. Powinieneś włączyć `credential.helper`:
 
     ```bash
     git config --global credential.helper store
