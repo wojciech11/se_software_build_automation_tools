@@ -170,14 +170,14 @@ Możesz używać gita do zachowywania aplikacji i skryptów rozwijanych w czasie
     rm ~/.git-credentials
     ```
 
-
-13. What if I want to clone (download) my code? Let's have a short exercise that shows how to do it:
+13. A co gdy ma repozytorium na githubie i chce zacząć z nim pracować lokalne. Ściągnąć repozytorium? Zobaczmy jak to zrobić:
 
     ```bash
+    # przejdzmy do innego katalogu
     mkdir ~/tmp
     cd ~/tmp
 
-	# url z github.com
+    # url z github.com
     git clone https://github.com/<TWOJ_GITHUB_USER>/nauka_git
     ```
 
