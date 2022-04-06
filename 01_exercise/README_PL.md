@@ -133,25 +133,27 @@ Możesz używać gita do zachowywania aplikacji i skryptów rozwijanych w czasie
      l(local\n.git) -- origin --> H(remote\ngithub)
      ```
 
-11. Let's go back to our git mantra and add one more step `git push`:
+11. Wróćmy do naszej mantry ale tym razem dodamy  `git push`:
 
     ```bash
+
     git status
-    # modify README.md
+
+    # zmien README.md
     git status
     git add README.md
 
-    # without -m, git will open a text editor
-    # for you to provide the message
+    # bez -m,
+    # git otworzy domyslny edytor
     git commit
     git log
     git push
 
-    # refrash the browser and check whether
-    # you see your changes there
+    # odswiez w przeglarce swoje repozytorium
+    # nauka_gita
     ```
 
-    Please do the git matra at least 3 times.
+    Proszę wykonaj wszystkie kroki przynajmniej 3 razy.
 
 12. Too tired to copy&paste your token? You should enable the `credential.helper`:
 
