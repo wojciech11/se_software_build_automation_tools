@@ -80,7 +80,7 @@ Możesz używać gita do zachowywania aplikacji i skryptów rozwijanych w czasie
 
 7. Jak jest rola pliku `README.md`? Dlaczego plik README jest tak istotny?
 
-8. Let's learn how to use Git. We will practice the git mantra modifing README.md and saving every version of the file git. Please do 3 iterations:
+8. Nauczymy się jak używać Gita. 6. Podążaj za wskazówkami wykładowcy, aby nauczyć się o komendach git działających na lokalnym repozytorium:
 
    ```bash
    git status
@@ -91,12 +91,16 @@ Możesz używać gita do zachowywania aplikacji i skryptów rozwijanych w czasie
    git log
    ```
 
-9. Please see how the git history looks with a visual tools:
+   Zmodyfikuj README.md i umieść zmiany w repozytorium. Powtórz 3 razy.
+
+9. Przyglądnij się, jak wygląda historia z pomocą graficznych programów `gitk` i `gitg`:
 
    ```bash
    gitk
    gitg
    ```
+
+   Doskonałymi graficznymi środowiskami do pracy z gitem jest [sourcetree](https://www.sourcetreeapp.com) i [gitkraken](https://www.gitkraken.com).
  
  10. Please create an empty github repository `learning_git`, follow the instructions:
 
