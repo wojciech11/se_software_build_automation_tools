@@ -38,7 +38,7 @@
    - Heroku as an example of PaaS
    - Continuous Deployment with Github actions
 
-6. Summary & Exam  <!-- [15/15] -->
+6. Summary & Exam - [slides](06_slides/)
 
 ## Useful commands
 
