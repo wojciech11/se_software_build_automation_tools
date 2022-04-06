@@ -181,9 +181,11 @@ Możesz używać gita do zachowywania aplikacji i skryptów rozwijanych w czasie
     git clone https://github.com/<TWOJ_GITHUB_USER>/nauka_git
     ```
 
-14. Draw a schema that shows how the process of adding changes to remote git repo works (in our case github).
+14. Naszkicuj, jak wygląda proces wrzucania plików do git-a (zaznacz staging oraz index i remote).
 
-## Git branches
+## Następny krok - Git branches
+
+Podążając za instrukcjami prowadzącego.
 
 1. Git branches? Pull request?
 
@@ -224,12 +226,10 @@ Możesz używać gita do zachowywania aplikacji i skryptów rozwijanych w czasie
     # let's see what we have in our directory
     ls
 
-
     # let's change the local branch to `master`
     git checkout master
     # what did change?
     ls
-
 
     # let's come back to the branch
     # with documentation
@@ -253,7 +253,10 @@ Możesz używać gita do zachowywania aplikacji i skryptów rozwijanych w czasie
 
 Follow the instructor.
 
-## Branches and Automations
+- Pull requests - github
+- Merge requests - gitlab
+
+## Zawansowane - Branches and Automations
 
 - feature branch workflow / [github flow](https://guides.github.com/introduction/flow/) / [trunk-based development](https://www.atlassian.com/continuous-delivery/continuous-integration/trunk-based-development)
 - your own with branches, e.g., `dev` -> the dev environemnt, `prod` -> production
@@ -261,12 +264,14 @@ Follow the instructor.
 
 See also [comparing workflows](https://www.atlassian.com/git/tutorials/comparing-workflows).
 
-## Tools
+## Narzędzia
 
-- simple: gitk, gitg; advanced: [sourcetree](https://www.sourcetreeapp.com/) or [kraken](https://support.gitkraken.com/how-to-install/); text-based: [tig](https://jonas.github.io/tig/)
-- interesting: [gitmoji-cli](https://github.com/carloscuesta/gitmoji-cli)
+- Proste: gitk i gitg;
+- Oferujące więcej funkcjonalności: [sourcetree](https://www.sourcetreeapp.com/) lub [kraken](https://support.gitkraken.com/how-to-install/);
+- tekstowe: [tig](https://jonas.github.io/tig/).
 
-## Additional materials
+## Zaawansowane
 
-- Git commit messages: [semantic](https://gist.github.com/joshbuchea/6f47e86d2510bce28f8e7f42ae84c716)/[conventional](https://www.conventionalcommits.org/en/v1.0.0/), imperative ([cbea.ms/git-commit](https://cbea.ms/git-commit/))
+- Git commit messages: [semantic](https://gist.github.com/joshbuchea/6f47e86d2510bce28f8e7f42ae84c716)/vs [conventional](https://www.conventionalcommits.org/en/v1.0.0/), imperative ([cbea.ms/git-commit](https://cbea.ms/git-commit/))
+- Podejście zyskujące na popularności: [gitmoji-cli](https://github.com/carloscuesta/gitmoji-cli)
 - Git style guide, e.g., https://github.com/agis/git-style-guide or https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html
