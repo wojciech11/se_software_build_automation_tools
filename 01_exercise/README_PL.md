@@ -1,6 +1,6 @@
-# Ćwiczenia 1 
+# Ćwiczenia 1
 
-Proszę bez kopiuj&wklej. Wersja po angielsku - [manual.md](manual.md).
+Proszę bez kopiuj&wklej. Czytaj uważnie instrukcję. Wersja po angielsku - [manual.md](manual.md).
 
 ## Podstawy pracy z Gitem
 
@@ -48,7 +48,7 @@ Możesz używać gita do zachowywania aplikacji i skryptów rozwijanych w czasie
 4. Zainicjuj repozytorium git-a:
 
    ```bash
-   # sprawdź, czy jesteś we właściwej ścieżce 
+   # sprawdź, czy jesteś we właściwej ścieżce
    pwd
 
    # powinienies zobaczyc
@@ -76,11 +76,11 @@ Możesz używać gita do zachowywania aplikacji i skryptów rozwijanych w czasie
    atom .
    ```
 
-   Dodaj kilka sekcji, obrazów, listy... pobaw się formatem Markdown podążając za wskazówkami z [dokumentacji](https://guides.github.com/features/mastering-markdown/). 
+   Dodaj kilka sekcji, obrazów, listy... pobaw się formatem Markdown podążając za wskazówkami z [dokumentacji](https://guides.github.com/features/mastering-markdown/).
 
 7. Jak jest rola pliku `README.md`? Dlaczego plik README jest tak istotny?
 
-8. Nauczymy się jak używać Gita. 6. Podążaj za wskazówkami wykładowcy, aby nauczyć się o komendach git działających na lokalnym repozytorium:
+8. Nauczymy się jak używać Gita. Podążaj za wskazówkami wykładowcy, aby nauczyć się o komendach git działających na lokalnym repozytorium:
 
    ```bash
    git status
@@ -101,18 +101,36 @@ Możesz używać gita do zachowywania aplikacji i skryptów rozwijanych w czasie
    ```
 
    Doskonałymi graficznymi środowiskami do pracy z gitem jest [sourcetree](https://www.sourcetreeapp.com) i [gitkraken](https://www.gitkraken.com).
- 
- 10. Please create an empty github repository `learning_git`, follow the instructions:
+
+ 10. Czas umieścić nasz projekt na githubie. Utwórz repozytorium w githubie, przez przeglądarkę, używając interfejsu webowego - `nauka.gita`:
 
      ```bash
-     # the right path, you will find in the github instructions
+     # tak jak podpowiada wam github.com
      git remote add origin https://.../learning_git.git
 
-     # run, it will fail
+     # **przeczytaj**
+     # na co git "narzeka"
+     # po wykonaniu następującej
      git push
 
-     # only once, later you can just call `git push`
+     # podazajac za wskazowka
+     # pelna komenda:
      git push --set-upstream origin master
+     ```
+
+     Jak nasze lokalne repozytorium jest połączone ze zdalnym repozytorium:
+
+     ```bash
+     # aby zobaczyc jak nasze lokalne repozytorium w katalogu .git
+     # ma swoj odpowiednik w githubie
+     git remote -v
+     ```
+
+     Wizualizacja:
+
+     ```mermaid
+     flowchart BT
+     l(local\n.git) -- origin --> H(remote\ngithub)
      ```
 
 11. Let's go back to our git mantra and add one more step `git push`:
@@ -201,9 +219,9 @@ Możesz używać gita do zachowywania aplikacji i skryptów rozwijanych w czasie
     ```bash
     git branch
 
-    # let's see what we have in our directory 
-    ls 
-      
+    # let's see what we have in our directory
+    ls
+
 
     # let's change the local branch to `master`
     git checkout master
@@ -237,7 +255,7 @@ Follow the instructor.
 
 - feature branch workflow / [github flow](https://guides.github.com/introduction/flow/) / [trunk-based development](https://www.atlassian.com/continuous-delivery/continuous-integration/trunk-based-development)
 - your own with branches, e.g., `dev` -> the dev environemnt, `prod` -> production
-- [git-flow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow) 
+- [git-flow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
 
 See also [comparing workflows](https://www.atlassian.com/git/tutorials/comparing-workflows).
 
@@ -250,4 +268,3 @@ See also [comparing workflows](https://www.atlassian.com/git/tutorials/comparing
 
 - Git commit messages: [semantic](https://gist.github.com/joshbuchea/6f47e86d2510bce28f8e7f42ae84c716)/[conventional](https://www.conventionalcommits.org/en/v1.0.0/), imperative ([cbea.ms/git-commit](https://cbea.ms/git-commit/))
 - Git style guide, e.g., https://github.com/agis/git-style-guide or https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html
-
