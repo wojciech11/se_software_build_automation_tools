@@ -25,7 +25,7 @@
    cd hello_world_app
    git init
    
-   cp SCIEZKA_DO_SKLONOWANE_REPO/02_exercise/hello_world/* .
+   cp -r SCIEZKA_DO_SKLONOWANE_REPO/02_exercise/hello_world/* .
    
    git status
    git add PLIK
