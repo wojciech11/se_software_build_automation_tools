@@ -1,6 +1,6 @@
 # WIP - Notes
 
-1. Cel: nowe repozytorium gita z zawartością - https://github.com/wojciech11/se_software_build_automation_tools/tree/master/02_exercise/hello_world
+1. Cel: nowe repozytorium gita na twoim koncie o nazwie `hello_world_app` z zawartością - https://github.com/wojciech11/se_software_build_automation_tools/tree/master/02_exercise/hello_world
 
    Podpowiedzi:
 
