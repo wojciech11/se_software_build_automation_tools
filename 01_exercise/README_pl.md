@@ -9,12 +9,7 @@ Możesz używać gita do zachowywania aplikacji i skryptów rozwijanych w czasie
 
 1. Utwórz konto na githubie -  https://github.com/join
 
-2. Zmieniła się̨ polityka GitHub i nie można już̇ logować́ się̨ hasłem od konta, dlatego sprawdź́ w dokumentacji jak wygenerować́ token i go użyć - [oficjalna dokumentacja](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token). Zaznacz dwa zakresy dla tokena:
-
-   - repository
-   - workflow
-
-3. Jeśli pracujesz na współdzielonej maszynie to utwórz folder o nazwie takiej jak Twój użytkownik gita (którego właśnie utworzyłeś) – jeśli pracujesz na swojej maszynie, utwórz folder workspace:
+2. Jeśli pracujesz na współdzielonej maszynie to utwórz folder o nazwie takiej jak Twój użytkownik gita (którego właśnie utworzyłeś) – jeśli pracujesz na swojej maszynie, utwórz folder workspace:
 
    ```bash
    # na swoim laptopie
@@ -29,7 +24,7 @@ Możesz używać gita do zachowywania aplikacji i skryptów rozwijanych w czasie
    cd workspace/NAZWA_UZTYK_GITHUB/nauka_gita
    ```
 
-4. Skonfiguruj git-a (zastąp **wojciech11** swoim użytkownikiem githuba):
+3. Skonfiguruj git-a (zastąp **wojciech11** swoim użytkownikiem githuba):
 
    ```bash
    # make L
@@ -66,7 +61,7 @@ Możesz używać gita do zachowywania aplikacji i skryptów rozwijanych w czasie
    cat .git/config
    ```
 
-6. Podążając za wskazówkami wykładowcy, utwórz `README.md` za pomocą atom (packages -> Markdown Preview -> Toggle).
+5. Podążając za wskazówkami wykładowcy, utwórz `README.md` za pomocą atom (packages -> Markdown Preview -> Toggle).
 
    ```bash
    touch README.md
@@ -78,9 +73,9 @@ Możesz używać gita do zachowywania aplikacji i skryptów rozwijanych w czasie
 
    Dodaj kilka sekcji, obrazów, listy... pobaw się formatem Markdown podążając za wskazówkami z [dokumentacji](https://guides.github.com/features/mastering-markdown/).
 
-7. Jak jest rola pliku `README.md`? Dlaczego plik README jest tak istotny?
+6. Jak jest rola pliku `README.md`? Dlaczego plik README jest tak istotny?
 
-8. Nauczymy się jak używać Gita. Podążaj za wskazówkami wykładowcy, aby nauczyć się o komendach git działających na lokalnym repozytorium:
+7. Nauczymy się jak używać Gita. Podążaj za wskazówkami wykładowcy, aby nauczyć się o komendach git działających na lokalnym repozytorium:
 
    ```bash
    git status
@@ -93,7 +88,7 @@ Możesz używać gita do zachowywania aplikacji i skryptów rozwijanych w czasie
 
    Zmodyfikuj README.md i umieść zmiany w repozytorium. Powtórz 3 razy.
 
-9. Przyglądnij się, jak wygląda historia z pomocą graficznych programów `gitk` i `gitg`:
+8. Przyglądnij się, jak wygląda historia z pomocą graficznych programów `gitk` i `gitg`:
 
    ```bash
    gitk
@@ -102,36 +97,42 @@ Możesz używać gita do zachowywania aplikacji i skryptów rozwijanych w czasie
 
    Doskonałymi graficznymi środowiskami do pracy z gitem jest [sourcetree](https://www.sourcetreeapp.com) i [gitkraken](https://www.gitkraken.com).
 
- 10. Czas umieścić nasz projekt na githubie. Utwórz repozytorium w githubie, przez przeglądarkę, używając interfejsu webowego - `nauka.gita`:
 
-     ```bash
-     # tak jak podpowiada wam github.com
-     git remote add origin https://.../learning_git.git
+9. Zmieniła się̨ polityka GitHub i nie można już̇ logować́ się̨ hasłem od konta, dlatego sprawdź́ w dokumentacji jak wygenerować́ token i go użyć - [oficjalna dokumentacja](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token). Zaznacz dwa zakresy dla tokena:
 
-     # **przeczytaj**
-     # na co git "narzeka"
-     # po wykonaniu następującej
-     git push
+   - repository
+   - workflow
 
-     # podazajac za wskazowka
-     # pelna komenda:
-     git push --set-upstream origin master
-     ```
+10. Czas umieścić nasz projekt na githubie. Utwórz repozytorium w githubie, przez przeglądarkę, używając interfejsu webowego - `nauka_gita`:
 
-     Jak nasze lokalne repozytorium jest połączone ze zdalnym repozytorium:
+    ```bash
+    # tak jak podpowiada wam github.com
+    git remote add origin https://.../nauka_gita.git
 
-     ```bash
-     # aby zobaczyc jak nasze lokalne repozytorium w katalogu .git
-     # ma swoj odpowiednik w githubie
-     git remote -v
-     ```
+    # **przeczytaj**
+    # na co git "narzeka"
+    # po wykonaniu następującej
+    git push
 
-     Wizualizacja:
+    # podazajac za wskazowka
+    # pelna komenda:
+    git push --set-upstream origin master
+    ```
 
-     ```mermaid
-     flowchart BT
-     l(local\n.git) -- origin --> H(remote\ngithub)
-     ```
+    Jak nasze lokalne repozytorium jest połączone ze zdalnym repozytorium:
+
+    ```bash
+    # aby zobaczyc jak nasze lokalne repozytorium w katalogu .git
+    # ma swoj odpowiednik w githubie
+    git remote -v
+    ```
+
+    Wizualizacja:
+
+    ```mermaid
+    flowchart BT
+    l(local\n.git) -- origin --> H(remote\ngithub)
+    ```
 
 11. Wróćmy do naszej mantry ale tym razem dodamy  `git push`:
 
