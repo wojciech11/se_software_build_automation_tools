@@ -16,7 +16,7 @@
    - Git
    - [Makefile](01_exercise/example/)
 
-2. What is CI/CD? - [manual](02_exercise/README.md) / [slides](02_slides/index.pdf):
+2. What is CI/CD? - [manual](02_exercise/README.md)([notes pl](02_exercise/README_pl.md)) / [slides](02_slides/index.pdf):
 
    - Makefile
    - tests
