@@ -73,6 +73,12 @@ Możesz używać gita do zachowywania aplikacji i skryptów rozwijanych w czasie
 
    Dodaj kilka sekcji, obrazów, listy... pobaw się formatem Markdown podążając za wskazówkami z [dokumentacji](https://guides.github.com/features/mastering-markdown/).
 
+   Aby zainstalować atoma na ubuntu (na podstawie [snapcraft](https://snapcraft.io/install/atom/ubuntu)):
+
+   ```bash
+   sudo snap install atom --classic
+   ```
+
 6. Jak jest rola pliku `README.md`? Dlaczego plik README jest tak istotny?
 
 7. Nauczymy się jak używać Gita. Podążaj za wskazówkami wykładowcy, aby nauczyć się o komendach git działających na lokalnym repozytorium:
