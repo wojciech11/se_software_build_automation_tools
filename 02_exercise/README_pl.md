@@ -46,6 +46,15 @@
 
 2. Dodajmy automatyzacje (na podstawie [manuala](https://github.com/wojciech11/se_software_build_automation_tools/blob/master/02_exercise/README.md#continuous-integration-with-github-actions)):
 
+   0. Jeśli nie masz kopi swojego projektu lokalnie, sklonuj go:
+
+      ```bash
+      # opcjonalnie:
+      mkdir workspace
+
+      git clone ADRES_REPOZYTORIUM_NA_GITHUBIE
+      ```
+
    1. Github oczekuje deklaracji automatyzacji w określonym katalogu:
    
       ```bash
