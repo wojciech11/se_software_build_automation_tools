@@ -45,35 +45,39 @@
 
    1. Github oczekuje deklaracji automatyzacji w określonym katalogu:
    
-   ```bash
-   # jesteś w głównym katalogu projektu
-   mkdir -p .github/workflows
-   ```
+      ```bash
+      # jesteś w głównym katalogu projektu
+      mkdir -p .github/workflows
+      ```
 
    2. Utwórz plik w `ci.yaml`:
 
-   ```bash
-   touch .github/workflows/ci.yaml
-   ```
+      ```bash
+      touch .github/workflows/ci.yaml
+      ```
 
    3. W ci.yaml utwórz pierwszą deklarację pipeline-u:
 
-   ```yaml
-   name: Package Project
-
-   # Controls when the workflow will run
-   on: [ push ]
-   
-   jobs:
-     build:
-       runs-on: ubuntu-latest
-   
-       steps:
-         # get the code under $GITHUB_WORKSPACE directory
-         - uses: actions/checkout@v2
-         # get the python
-         - name: Set up Python 3
-           uses: actions/setup-python@v3
-         - name: Install deps
-           run: pip3 install -r requirements.txt
+      ```yaml
+      name: Package Project
+      
+      # Controls when the workflow will run
+      on: [ push ]
+      
+      jobs:
+        build:
+          runs-on: ubuntu-latest
+      
+          steps:
+            # get the code under $GITHUB_WORKSPACE directory
+            - uses: actions/checkout@v2
+            # get the python
+            - name: Set up Python 3
+              uses: actions/setup-python@v3
+            - name: Install deps
+              run: pip3 install -r requirements.txt
    ```
+
+   4. Dodaj plik `ci.yaml` to repozytorium githuba (zauważ token musi być utworzony z zaznaczeniem workflow).
+
+   5. Przejdź do zakładki `Actions`.
