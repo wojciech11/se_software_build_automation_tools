@@ -98,4 +98,4 @@
 
    5. Przejdź do zakładki `Actions` w interfejscie webowym githuba na stronie twojego projektu.
 
-   6. Jeśli build nie przeszedł, zobacz czy projekcie nie ma innych plików zawierających biblioteki wymagane do uruchomienia testów.
+   6. Jeśli build nie przeszedł, zobacz plik `README.md` w repozytorium twojej aplikacji co jeszcze trzeba zainstalować, aby testy działały.
