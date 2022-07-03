@@ -77,7 +77,7 @@
       on: [ push ]
       
       jobs:
-        build:
+        build_and_test:
           runs-on: ubuntu-latest
       
           steps:
@@ -97,3 +97,5 @@
    4. Dodaj plik `ci.yaml` to repozytorium githuba (zauważ token musi być utworzony z zaznaczeniem workflow).
 
    5. Przejdź do zakładki `Actions` w interfejscie webowym githuba na stronie twojego projektu.
+
+   6. Jeśli build nie przeszedł, zobacz czy projekcie nie ma innych plików zawierających biblioteki wymagane do uruchomienia testów.
