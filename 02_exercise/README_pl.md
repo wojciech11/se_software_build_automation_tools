@@ -87,4 +87,4 @@
 
    4. Dodaj plik `ci.yaml` to repozytorium githuba (zauważ token musi być utworzony z zaznaczeniem workflow).
 
-   5. Przejdź do zakładki `Actions`.
+   5. Przejdź do zakładki `Actions` w interfejscie webowym githuba na stronie twojego projektu.
