@@ -16,6 +16,9 @@
    cd
    mkdir tmp
    cd tmp
+
+   # klonowanie
+   # pobieranie kodu na lokalny komputer
    git clone https://github.com/wojciech11/se_software_build_automation_tools
    
    cd se_software_build_automation_tools
@@ -32,7 +35,7 @@
    mkdir hello_world_app
    cd hello_world_app
    git init
-   
+
    cp -r SCIEZKA_DO_SKLONOWANE_REPO/02_exercise/hello_world/* .
    
    git status
@@ -74,9 +77,13 @@
             # get the python
             - name: Set up Python 3
               uses: actions/setup-python@v3
+            # zainstaluj wymagane biblioteki
             - name: Install deps
               run: pip3 install -r requirements.txt
-   ```
+            # dla kazdej zmiany, uruchom testy
+            - name: Run tests
+              run: PYTHONPATH=. py.test --verbose -s
+      ```
 
    4. Dodaj plik `ci.yaml` to repozytorium githuba (zauważ token musi być utworzony z zaznaczeniem workflow).
 
