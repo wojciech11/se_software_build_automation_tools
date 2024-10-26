@@ -146,7 +146,7 @@ Jeśli szukasz wersję w języku angielsku - [README.md](./README.md).
       sudo apt-get install vim
       ```
 
-    - wrócmy spowrotem do katalogu domowego: `cd`
+    - wrócmy z powrotem do katalogu domowego: `cd`
 
     - czas uruchomić `vim`:
 
@@ -199,7 +199,7 @@ Jeśli szukasz wersję w języku angielsku - [README.md](./README.md).
 
 ## Praca z plikami
 
-1. Wrócmy spowrotem do naszego katalogu domowego, utwórzmy folder `workspace` i przejdźmy do niego:
+1. Wrócmy z powrotem do naszego katalogu domowego, utwórzmy folder `workspace` i przejdźmy do niego:
 
    ```bash
    cd
@@ -315,7 +315,7 @@ Jeśli szukasz wersję w języku angielsku - [README.md](./README.md).
     rm myfile2.txt
     ```
 
-11. ... a teraz spowrotem do katalogów z miastami, aby zobaczyć jak kasujemy katalogi (puste oraz z zawartością):
+11. ... a teraz z powrotem do katalogów z miastami, aby zobaczyć jak kasujemy katalogi (puste oraz z zawartością):
 
     ```bash
     cd
